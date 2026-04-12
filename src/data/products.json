@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "billing": "/Mo",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "badge": "Best Seller",
+    "icon": "writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "title": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "billing": "/One-Time",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "badge": "Popular",
+    "icon": "design-tool.png"
+  },
+  {
+    "id": 3,
+    "title": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "billing": "/Mo",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "badge": "New",
+    "icon": "portfolio.png"
+  },
+  {
+    "id": 4,
+    "title": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "billing": "/Mo",
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "badge": "Popular",
+    "icon": "operation.png"
+  },
+  {
+    "id": 5,
+    "title": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "billing": "/One-Time",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "badge": "New",
+    "icon": "writing_2327400 1.png"
+  },
+  {
+    "id": 6,
+    "title": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "billing": "/Mo",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "badge": "Best Seller",
+    "icon": "social-media.png"
+  },
+  {
+    "id": 7,
+    "title": "SEO Optimizer Bundle",
+    "description": "Rank higher on search engines with our comprehensive SEO toolset.",
+    "price": 59,
+    "billing": "/Mo",
+    "features": ["Keyword tracking", "Site audits", "Backlink analysis"],
+    "badge": null,
+    "icon": "operation.png"
+  },
+  {
+    "id": 8,
+    "title": "Video Editor Pro",
+    "description": "Intuitive video editing software for creators, complete with transitions and effects.",
+    "price": 89,
+    "billing": "/One-Time",
+    "features": ["4K export", "Unlimited tracks", "Motion graphics"],
+    "badge": "Popular",
+    "icon": "design-tool.png"
+  },
+  {
+    "id": 9,
+    "title": "E-commerce Starter Kit",
+    "description": "Everything you need to launch and manage a successful online store.",
+    "price": 99,
+    "billing": "/One-Time",
+    "features": ["Store templates", "Inventory system", "Payment gateways"],
+    "badge": "Best Seller",
+    "icon": "shopping-cart.png"
+  },
+  {
+    "id": 10,
+    "title": "Email Marketing Hub",
+    "description": "Design, send, and track stunning email campaigns with ease.",
+    "price": 25,
+    "billing": "/Mo",
+    "features": ["Drag-and-drop builder", "A/B testing", "Subscriber analytics"],
+    "badge": null,
+    "icon": "social-media.png"
+  },
+  {
+    "id": 11,
+    "title": "Developer Icon Set",
+    "description": "A massive collection of vector icons specifically tailored for software UI.",
+    "price": 12,
+    "billing": "/One-Time",
+    "features": ["SVG and PNG formats", "Light & dark modes", "Free updates"],
+    "badge": "New",
+    "icon": "design-tool.png"
+  },
+  {
+    "id": 12,
+    "title": "Podcast Production Suite",
+    "description": "Record, edit, and publish professional-grade podcasts from your browser.",
+    "price": 35,
+    "billing": "/Mo",
+    "features": ["Noise reduction", "Multi-track editing", "Direct publishing"],
+    "badge": null,
+    "icon": "portfolio.png"
+  }
+]
