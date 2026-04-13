@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import productsData from '../data/products.json'; // Adjust path if needed
-
+import productsData from '../data/products.json';
+import { ToastContainer, toast } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';
 
 import designToolIcon from '../assets/products/design-tool.png';
 import operationIcon from '../assets/products/operation.png';
@@ -20,17 +21,30 @@ const iconMap = {
 
 export default function ProductSection() {
   const [activeTab, setActiveTab] = useState('products');
-  
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => { 
     if (!cart.some(item => item.id === product.id)) {
       setCart([...cart, product]);
+      toast.success(`${product.title} added to cart!`);
+    } else {
+      toast.info(`${product.title} is already in your cart.`);
     }
   };
 
   const removeFromCart = (productId) => {
+    const itemToRemove = cart.find(item => item.id === productId);
     setCart(cart.filter(item => item.id !== productId));
+    
+    toast.error(`${itemToRemove?.title || 'Item'} removed from cart.`);
+  };
+
+  const handleCheckout = () => {
+    setCart([]); 
+    toast.success('Checkout initiated! Redirecting to payment...', {
+      position: "top-center",
+      autoClose: 4000,
+    });
   };
 
   const cartTotal = cart.reduce((total, item) => total + item.price, 0);
@@ -45,8 +59,10 @@ export default function ProductSection() {
   };
 
   return (
-    <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto font-sans">
+    <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto relative">
       
+      <ToastContainer position="bottom-right" autoClose={3000} />
+
       <div className="text-center mb-12 flex flex-col items-center">
         <h2 className="text-4xl font-bold text-[#1a1b1e] mb-3">Premium Digital Tools</h2>
         <p className="text-gray-500 mb-8 max-w-xl mx-auto">
@@ -158,7 +174,10 @@ export default function ProductSection() {
                 <span className="text-2xl font-bold text-gray-900">${cartTotal}</span>
               </div>
               
-              <button className="w-full py-3.5 rounded-full bg-[#9b2cff] hover:bg-[#8320db] text-white font-semibold text-sm transition-colors shadow-sm">
+              <button 
+                onClick={handleCheckout} 
+                className="w-full py-3.5 rounded-full bg-[#9b2cff] hover:bg-[#8320db] text-white font-semibold text-sm transition-colors shadow-sm"
+              >
                 Proceed To Checkout
               </button>
             </>
