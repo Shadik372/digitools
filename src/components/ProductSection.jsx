@@ -23,7 +23,7 @@ export default function ProductSection() {
   
   const [cart, setCart] = useState([]);
 
-  const addToCart = (product) => {
+  const addToCart = (product) => { 
     if (!cart.some(item => item.id === product.id)) {
       setCart([...cart, product]);
     }
@@ -90,7 +90,7 @@ export default function ProductSection() {
               </div>
 
               <h3 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h3>
-              <p className="text-sm text-gray-500 mb-6 leading-relaxed flex-grow">
+              <p className="text-sm text-gray-500 mb-6 leading-relaxed grow">
                 {product.description}
               </p>
 

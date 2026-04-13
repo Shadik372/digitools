@@ -3,6 +3,7 @@ import Banner from './components/Banner';
 import NavBar from './components/NavBar';
 import ProductSection from './components/ProductSection';
 import Stats from './components/Stats';
+import Steps  from './components/Steps';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Banner></Banner>
       <Stats></Stats>
       <ProductSection></ProductSection>
+      <Steps></Steps>
     </div>
   )
 }
