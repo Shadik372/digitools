@@ -1,6 +1,7 @@
 import './App.css'
 import Banner from './components/Banner';
 import CallToAction from './components/CallToAction';
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import Pricing from './components/Pricing';
 import ProductSection from './components/ProductSection';
@@ -19,6 +20,7 @@ function App() {
       <Steps></Steps>
       <Pricing></Pricing>
       <CallToAction></CallToAction>
+      <Footer></Footer>
     </div>
   )
 }
